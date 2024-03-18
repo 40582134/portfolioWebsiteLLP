@@ -52,6 +52,9 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8rem;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
 }
 
 main {
@@ -241,7 +244,20 @@ p.generic-paragraph {
 }
 .header .main-nav .navbar-toggler {
   margin-right: 1rem;
+  fill: var(--title-color);
+  border-width: 1px;
+  border-color: var(--title-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  padding: 3px;
+  transition: transform 0.3s ease;
 }
+
+.navbar-toggler:hover {
+  transform: scale(0.9);
+}
+
 /* ========================================================================== */
 /* Banner */
 /* ========================================================================== */
@@ -327,23 +343,38 @@ p.generic-paragraph {
 }
 
 .projects {
-  padding: 4rem 0rem;
+  padding: 4rem 4rem;
 }
+
 .projects .the-button-legion button {
   font-size: 1.2rem;
   background: transparent;
   border: none;
   text-transform: uppercase;
 }
+
 .projects .the-button-legion button + button {
   padding-left: 2em;
 }
+
 .projects span {
   color: var(--text-color);
   font-size: 1rem;
 }
+
 .projects img {
   border-radius: 2%;
+}
+
+.project-descriptions {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  line-height: 1.6;
+  color: var(--text-color);
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: justify;
 }
 
 /* ========================================================================== */
@@ -364,18 +395,6 @@ p.generic-paragraph {
   position: relative;
 }
 
-/*.skills-header:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #2ecc71;
-  height: 6px;
-  width: 6%;
-  border-radius: 40%;
-}
-*/
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -413,6 +432,7 @@ p.generic-paragraph {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
 }
 
 .start-bouncing {
@@ -444,6 +464,10 @@ p.generic-paragraph {
 .skill-title:hover h3 {
   color: #2ecc71;
   cursor: pointer;
+}
+
+.skills p {
+  text-align: justify;
 }
 
 /* ========================================================================== */
