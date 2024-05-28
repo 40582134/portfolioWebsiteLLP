@@ -354,7 +354,11 @@ p.generic-paragraph {
 }
 
 .projects .the-button-legion button + button {
-  padding-left: 2em;
+}
+
+.projects .the-button-legion button.active {
+  border-bottom: 2px solid var(--title-color); /* Adjust the color to match the active navbar class */
+  padding-bottom: 6px;
 }
 
 .projects span {
@@ -694,4 +698,32 @@ p.generic-paragraph {
   .footer-distributed .footer-center i {
     margin-left: 0;
   }
+}
+
+/* Add these new rules to your existing CSS */
+
+.projects .the-button-legion button {
+  transition: transform 0.3s ease;
+}
+
+.projects .the-button-legion button:hover {
+  transform: scale(0.9);
+}
+
+.projects .my-projects .img img {
+  transition: transform 0.3s ease;
+}
+
+.projects .my-projects .img:hover img {
+  transform: scale(0.95);
+}
+
+/* Add these new rules to your existing CSS */
+
+.projects .title h4 {
+  transition: transform 0.3s ease;
+}
+
+.projects .title:hover h4 {
+  transform: scale(0.9);
 }
